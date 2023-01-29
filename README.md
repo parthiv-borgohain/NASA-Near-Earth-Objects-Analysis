@@ -2,60 +2,19 @@
 
 Project as a part of coursework for Data Science Programming taught in Summer Semester of UT Austin's MS Business Analytics Program 
 
-## Introduction:
+## Overview:
+This project aims to predict whether a certified asteroid will be hazardous to Earth by analyzing various variables such as diameter, relative velocity, and more using NASA's Near Earth Objects dataset. The dataset consists of 90836 rows and 10 columns, with 6 usable variables for analysis. Through exploratory analysis and machine learning techniques such as Naive Bayes, Logistic Regression, KNN, and Trees/Ensemble Methods, we aim to find the relevant factors or combination of factors that make these asteroids dangerous to Earth. By understanding these features, scientists can develop crisis management plans and increase human welfare. The project found that the absolute magnitude variable had the strongest relationship with the target variable, and that the closest objects to Earth are the most dangerous. The best performing model was Gradient Boosting with a test accuracy of 91.52%.
 
-This project aims to predict whether a certified asteroid will be hazardous or not using certain variables. The dataset used consists of NASA-certified asteroids that are classified as the nearest earth object and contains information about several asteroids such as the diameter, relative velocity, and more.
+## Takeaways and Next Steps:
 
-Dataset Source: https://www.kaggle.com/datasets/sameepvani/nasa-nearest-earth-objects
+Key takeaways from the analysis include:
 
-## Importance:
+* Only 4 variables were used to predict whether a NFO is hazardous and the remaining variables were dropped before fitting the models.
 
-* Space is often a topic that we are unfamiliar with due to factors such as distance, unknown, and dangerousness.
-    
-* By orbiting or existing near Earth, there is a certain probability that asteroids will disrupt Earth’s natural phenomena.
-    
-* Finding relevant factors or combination of factors for these asteroids to be hazardous to Earth will help scientists come up with crisis management plans beforehand and increase human welfare.
+* None of the 4 selected variables had a significant impact on the target variable and predictive models did not show significant improvement over the baseline model.
 
-## Exploratory Analysis:
+* The best model obtained a test accuracy of 92.015% compared to a baseline accuracy of 90% and an F1 score of around 0.48.
 
-* The data consisted of 90836 rows and 10 columns and had 6 variables that were usable in our analysis.
+* The most important feature according to the best model was miss_distance.
 
-* Variables used were the estimated diameter minimum, estimated diameter maximum, absolute magnitude, relative velocity, the distance it missed the earth, and our target variable, whether it was hazardous to earth or not.
-
-* Data cleaning was done to remove the useless variables such as sentry object and orbiting body.
-
-* Correlation chart showed the variable with the strongest relationship with our target variable was the absolute magnitude variable with a -.37 correlation.
-
-* Group by functions showed that only 5% of asteroids under .25 kilometers were hazardous compared to all the other sizes greater than that which were hazardous at about a 40% rate.
-
-* Absolute magnitude variable showed that the only asteroids that were hazardous were the asteroids that had an absolute magnitude of 24 or less.
-
-* Machine learning was used to try and use these variables to help classify these asteroids as hazardous.
-
-## Solution and Insights:
-
-#### Naive Bayes:
-
-* The data was run through Naive Bayes to find out the probability of hazard happening given each different factors that occured.
-
-* The estimate diameter min & max was split into binary values that are higher than “2” and those that are under “2” which improved accuracy from 76% to 89%.
-
-* Results showed that the Naive Bayes model was not performing well with an accuracy of 89.69% and 89.61%.
-
-* Absolute magnitude was found to be the most important feature and miss distance was the least important feature.
-
-* F1 score was low due to recall value being close to zero.
-
-#### Logistic Regression:
-
-* Logistic regression was used to understand the importance of each variable in predicting the change in hazardous.
-
-* Dependent variable “hazardous” was made into binary numbers to run this regression.
-
-* Results showed that variables such as relative velocity, miss distance, and estimated diameter minimum were important in predicting hazardous.
-
-* Model was able to predict hazardous with an accuracy of 93.33%.
-
-## Conclusion:
-
-The project was able to identify relevant factors or combination of factors that make asteroids hazardous to Earth through exploratory analysis and machine learning techniques. These findings can help scientists come up with crisis management plans beforehand and increase human welfare.
+* Next steps include working with a larger dataset and including more features to improve the predictive model.
