@@ -18,3 +18,7 @@ Key takeaways from the analysis include:
 * The most important feature according to the best model was miss_distance.
 
 * Next steps include working with a larger dataset and including more features to improve the predictive model.
+
+#### Note: ####
+
+I am unfortunately unable to find all of the codes we used for our analysis. So only a portion of this code is available in this repository.
