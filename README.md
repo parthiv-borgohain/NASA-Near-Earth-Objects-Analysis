@@ -21,4 +21,8 @@ As a next step, we plan to work with a larger dataset with a less uneven distrib
 
 #### Note: ####
 
+Detailed insights and findings are presented in the two PDFs in this repository. One of them is a text report while the other is a PowerPoint Presentation.
+
+#### Note: ####
+
 I am unfortunately unable to find all of the codes we used for our analysis. So only a portion of this code is available in this repository.
