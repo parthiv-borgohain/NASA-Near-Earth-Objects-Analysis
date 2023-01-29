@@ -7,17 +7,17 @@ This project aims to predict whether a certified asteroid will be hazardous to E
 
 ## Takeaways and Next Steps:
 
-Key takeaways from the analysis include:
+The key takeaways of our analysis include:
 
-* Only 4 variables were used to predict whether a NFO is hazardous and the remaining variables were dropped before fitting the models.
+* Only 4 variables were used to predict whether a Near Earth Object (NFO) is hazardous, with the remaining variables not being useful for prediction and being dropped before fitting the models.
 
-* None of the 4 selected variables had a significant impact on the target variable and predictive models did not show significant improvement over the baseline model.
+* None of the 4 selected variables seem to have a significant impact on the target variable, with all 4 variables having similar values for feature importance in the Gradient Boosted Tree Model.
 
-* The best model obtained a test accuracy of 92.015% compared to a baseline accuracy of 90% and an F1 score of around 0.48.
+* The predictive model built may not show significant improvement over the baseline model as the 4 variables do not appear to be strong predictors. Our best model had a test accuracy of 92.015% compared to the baseline accuracy of around 90% and an F1 score of around 0.48.
 
-* The most important feature according to the best model was miss_distance.
+* The most important feature, according to the best model, was the miss_distance variable.
 
-* Next steps include working with a larger dataset and including more features to improve the predictive model.
+As a next step, we plan to work with a larger dataset with a less uneven distribution of True and False values for the target variable to potentially improve the predictive model. We also plan to include more features in the model to arrive at a better model as the current variables did not prove to be highly impactful in predicting the target class.
 
 #### Note: ####
 
